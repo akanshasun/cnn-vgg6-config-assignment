@@ -29,11 +29,11 @@ This code can be run by clicking on google colab link provided in python noteboo
 With the change in activation function, optimizer, batch size, learning rate and epochs, the accuracy varied.
 
 I found from my wanddb plots that the following configuration gave best accuracy 
-Activation function: Relu
-Optimizer :  lbfgs
-Batch size :  64
+Activation function: Gelu
+Optimizer :  adamax
+Batch size :  512
 Epochs: 40
-Learning rate : 0.1
-Got val/accuract of 0.8986 with these configurations
+Learning rate : 0.05
+Got val/accuract of 0.9126 with these configurations
 
 
