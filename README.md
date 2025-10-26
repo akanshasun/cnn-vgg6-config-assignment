@@ -1,0 +1,1 @@
+# cnn-vgg6-config-assignment
