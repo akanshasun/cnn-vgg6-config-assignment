@@ -7,10 +7,25 @@ I have used RandomCrop and RandomHorizontalFlip for data transformation.
 RandomCrop – Crops a random 32*32 region from a padded image 
 RadomHorizontalFlip – Left/Right mirroring of the image
 I also have AutoAugment and random erasing in the code
+I have used SEED = 42
+Need to import following packages
+
+import os, math, time, random
+import torch
+import torch.nn as nn
+import torch.optim as optim
+from torch.utils.data import DataLoader, random_split
+from torchvision import datasets, transforms
+import matplotlib.pyplot as plt
+import torch.nn.functional as F
+import torch.nn.init as init
+import pandas as pd
+import argparse
+import wandb
 
 
 This code can be run by clicking on google colab link provided in python notebook. 
- 
+
 With the change in activation function, optimizer, batch size, learning rate and epochs, the accuracy varied.
 
 I found from my wanddb plots that the following configuration gave best accuracy 
